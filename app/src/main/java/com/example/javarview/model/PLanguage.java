@@ -3,8 +3,8 @@ package com.example.javarview.model;
 import java.util.Vector;
 
 public class PLanguage {
-    private Vector<String> name;
-    private Vector<String> image;
+    private Vector<String> name = new Vector<String>();
+    private Vector<String> image = new Vector<String>();
 
     public Vector<String> getName() {
         return name;

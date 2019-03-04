@@ -14,13 +14,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setTitle("First Project");
+        adapter.dataInit();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         RView = findViewById(R.id.recyclerView1);
 
         RView.setLayoutManager(new LinearLayoutManager(this));
-        adapter.dataInit();
+
         RView.setAdapter(adapter);
 
     }

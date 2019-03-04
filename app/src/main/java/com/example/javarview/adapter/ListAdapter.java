@@ -18,8 +18,8 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.Handler>{
     private Context context;
-    private Vector<String> progLang;
-    private Vector<String> imageUrl;
+    private Vector<String> progLang = new Vector<String>();
+    private Vector<String> imageUrl = new Vector<String>();
 
     public ListAdapter(Context context)
     {
