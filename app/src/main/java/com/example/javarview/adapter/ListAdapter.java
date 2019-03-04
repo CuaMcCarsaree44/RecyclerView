@@ -1,6 +1,9 @@
 package com.example.javarview.adapter;
 
 import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 
 import android.support.v7.widget.RecyclerView;
@@ -8,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
 import com.example.javarview.R;
 import com.example.javarview.model.PLanguage;
 import com.squareup.picasso.Picasso;
@@ -23,7 +27,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.Handler>{
 
     public ListAdapter(Context context)
     {
-        context = this.context;
+        this.context = context;
     }
 
     public void dataInit()
@@ -42,13 +46,15 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.Handler>{
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ListAdapter.Handler handler, int i) {
+    public void onBindViewHolder(@NonNull ListAdapter.Handler handler, final int i) {
         handler.txt.setText(progLang.get(i));
 
+        //TODO Need To Fix!!! imageUrl not working
         Picasso.get().load(imageUrl.get(i))
                 .placeholder(R.mipmap.ic_launcher_round)
-                .error(R.mipmap.ic_launcher)
+                .error(R.mipmap.ic_black)
                 .into(handler.circleImg);
+
     }
 
     @Override

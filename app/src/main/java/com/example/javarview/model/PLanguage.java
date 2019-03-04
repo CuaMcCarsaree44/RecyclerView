@@ -28,10 +28,10 @@ public class PLanguage {
         name.add("Java");
         name.add("Kotlin");
 
-        image.add("@drawable/csharp");
-        image.add("@drawable/cplusplus");
-        image.add("@drawable/java");
-        image.add("@drawable/kotlin");
+        image.add("android.drawable://csharp");
+        image.add("android.drawable://cplusplus");
+        image.add("android.drawable://java");
+        image.add("android.drawable://kotlin");
     }
 }
 
