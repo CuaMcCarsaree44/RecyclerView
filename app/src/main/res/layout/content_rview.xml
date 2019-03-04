@@ -6,19 +6,22 @@
     android:layout_height="match_parent"
     android:padding="15dp"
     >
+
     <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/content_images"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:id="@+id/content_images"
-        android:src="@mipmap/ic_launcher"
-        />
+        android:src="@mipmap/ic_launcher_round" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="17pt"
+        android:textSize="26sp"
         android:layout_toRightOf="@+id/content_images"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="Programming Language"
+        android:id="@+id/proglang"
         />
 
 </RelativeLayout>
