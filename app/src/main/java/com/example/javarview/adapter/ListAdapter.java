@@ -48,9 +48,11 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.Handler>{
     @Override
     public void onBindViewHolder(@NonNull ListAdapter.Handler handler, final int i) {
         handler.txt.setText(progLang.get(i));
+        int resID = context.getResources().getIdentifier(imageUrl.get(i),
+                "drawable", context.getPackageName());
 
-        //TODO Need To Fix!!! imageUrl not working
-        Picasso.get().load(imageUrl.get(i))
+
+        Picasso.get().load(resID)
                 .placeholder(R.mipmap.ic_launcher_round)
                 .error(R.mipmap.ic_black)
                 .into(handler.circleImg);
