@@ -36,7 +36,6 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.Handler>{
     @NonNull
     @Override
     public ListAdapter.Handler onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        dataInit();
         View view = LayoutInflater.from(context).inflate(R.layout.content_rview, viewGroup, false);
         Handler handler = new Handler(view);
         return handler;
