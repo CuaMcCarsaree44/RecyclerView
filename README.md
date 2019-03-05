@@ -1,3 +1,6 @@
 # RecyclerView
-Written in Java, my own Recycler View. Will be convert to Kotlin soon
-Done at 4:49 AM 3/5/2019
+My own example to making Recycler View in Android Studio.
+This app written in Kotlin Programming Language
+
+Last Pushed at
+09:47AM 05 March 2019
